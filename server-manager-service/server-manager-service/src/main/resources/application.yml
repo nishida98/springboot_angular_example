@@ -1,1 +1,13 @@
-
+spring:
+  datasource:
+    password: provider
+    url: jdbc:mysql://localhost:3306/serverdb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: true
